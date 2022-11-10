@@ -4,7 +4,7 @@ body {
 
 input {
   appearance: none;
-  width: 100%;
+  width: 80%;
   height: 20px;
   background: #1f2c49;
   border-radius: 22px;
@@ -12,7 +12,7 @@ input {
 }
 
 .row {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
 }
