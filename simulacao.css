@@ -1,0 +1,19 @@
+input {
+  text-align: center;  
+  width: 80%;
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: smaller;
+}
+
+.info {
+  font-weight: bold;
+}
+

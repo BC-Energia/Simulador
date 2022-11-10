@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="simulacao.css">
+  <script src="simulacao.js"></script>
+  <title>Simulação</title>
+</head>
+<body>
+  <h1>Simples, rápido e fácil!</h1>
+  <p>Economizar energia é uma de suas prioridades? Utilize nosso simulador para estimar a redução de custo que pode ser alcançada com a adoção de uma de nossas soluções. É fácil: basta preencher o formulário com seus dados e os resultados serão gerados automaticamente</p>
+  <input type="range" id="simulador-range" value="50" min="50" max="100000" step="50" oninput="atualizaSimulador(this.value)">
+  <div class="row">
+    <div class="col-custom">
+        <span class="title">Valor da<br> Fatura mensal (R$)</span>
+        <br/>
+        <span class="info">R$ <span id="valor-fatura-mensal">50,00</span></span>
+    </div>
+    <div class="col-custom">
+        <span class="title">kWh<br> Mês</span>
+        <br/>
+        <span class="info"><span id="kwh-mes">65.78</span> kWh</span>
+    </div>
+    <div class="col-custom">
+        <span class="title">Economia mensal<br> Estimada (R$)</span>
+        <br/>
+        <span class="info">R$ <span id="economia-mensal-estimada">9,00</span></span>
+    </div>
+    <div class="col-custom">
+        <span class="title">Economia anual<br> Estimada (R$)</span>
+        <br/>
+        <span class="info">R$ <span id="economia-anual-estimada">108,00</span></span>
+    </div>
+    <div class="col-custom">
+        <span class="title">Toneladas de emissão<br> Evitadas (t co2/mês)</span>
+        <br/>
+        <span class="info"><span id="toneladas-emissao-evitadas">0.005</span> tCO2</span>
+    </div>
+    <div class="col-custom">
+        <span class="title">Árvores salvas<br> (unidades/mês)</span>
+        <br/>
+        <span class="info"><span id="arvores-salvas">0,04</span></span>
+    </div>
+  </div>
+</body>
+</html>
