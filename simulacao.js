@@ -11,7 +11,6 @@ function atualizaSimulador(valorDoRange) {
   const arvoresSalvas = kwhMes * arvoreMWh
 
   document.getElementById('valor-fatura-mensal').innerHTML = Number(valorDoRange).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
-  // document.getElementById('kwh-mes').innerHTML = kwhMes.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
   document.getElementById('economia-mensal-estimada').innerHTML = economiaMes.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
   document.getElementById('economia-anual-estimada').innerHTML = economiaAno.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
   document.getElementById('toneladas-emissao-evitadas').innerHTML = tCO2Mes.toFixed(3)
